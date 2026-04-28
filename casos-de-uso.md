@@ -8,7 +8,7 @@
   
 #### Fluxo principal:
 
-- O cliente seleciona a opção “Criar conta”.
+- O cliente seleciona a opção "Criar conta".
   
 - O sistema leva o usuário até a tela de registro contendo um formulário.
   
@@ -53,7 +53,8 @@
 #### Atores: 
 
 - Usuário.
-Regras de uso
+
+#### Regras de uso:
 
 #### Fluxo principal: 
 
@@ -80,7 +81,9 @@ Regras de uso
 
 - Usuário.
 
-#### Regras de uso: O cliente pode comentar e apagar o comentário. O administrador só pode apagar um comentário.
+#### Regras de uso:
+
+O cliente pode comentar e apagar o comentário. O administrador só pode apagar um comentário.
 
 #### Fluxo principal:  
 
@@ -94,7 +97,7 @@ Regras de uso
 
 - O cliente aperta em um botão de publicar em comentário.
 
-- O sistema pede confimação do usuário.
+- O sistema pede confirmação do usuário.
 
 - O cliente confirma a publicação.
 
@@ -119,9 +122,9 @@ Regras de uso
 
 - O administrador preenche a identificação do cliente.
 
--O sistema exibe um prazo pra devolução. 
+- O sistema exibe um prazo para devolução. 
   
-- O administrador finaliza o aluguel e é redirecionado para a pagina inicial.
+- O administrador finaliza o aluguel e é redirecionado para a página inicial.
 
 
  
@@ -142,7 +145,7 @@ Regras de uso
 
 - O administrador confirma.
 
-- O sistema volta pra página inicial.
+- O sistema volta para página inicial.
 
 
 
@@ -163,7 +166,7 @@ Regras de uso
 
 - O administrador edita.
 
-- O administrador aperta no botão de editar.
+- O administrador aperta no botão de salvar.
 
 - O sistema pede confirmação.
 
@@ -209,7 +212,7 @@ Regras de uso
 
 - Cliente.
 
-#### Fluxos principal:
+#### Fluxo principal:
 
 - O cliente clica no ícone do próprio perfil.
 
@@ -219,7 +222,7 @@ Regras de uso
 
 - O cliente edita as informações do perfil.
 
-- O cliente clica no botão de editar.
+- O cliente clica no botão de salvar.
 
 - O sistema pede confirmação.
 
