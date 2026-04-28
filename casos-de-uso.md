@@ -5,6 +5,12 @@
 #### Atores:
 
 - Cliente.
+
+#### Regras de uso:
+
+- O e-mail deve ser único no sistema.
+- A senha deve ter no mínimo 8 caracteres.
+- Não é permitido registrar com campos vazios.
   
 #### Fluxo principal:
 
@@ -31,6 +37,12 @@
 
 - Usuário.
 
+#### Regras de uso:
+
+- O usuário deve estar registrado no sistema.
+- Email e senha são obrigatórios.
+- O sistema deve bloquear a conta após 3 tentativas falhadas.
+
 #### Fluxo principal:
 
 - O usuário seleciona a opção "Login".
@@ -55,6 +67,11 @@
 - Usuário.
 
 #### Regras de uso:
+
+- A busca não diferencia maiúsculas de minúsculas.
+- É possível buscar por título, gênero ou autor.
+- O sistema exibe no máximo 20 livros por página.
+- Os resultados são ordenados por relevância.
 
 #### Fluxo principal: 
 
@@ -83,7 +100,10 @@
 
 #### Regras de uso:
 
-O cliente pode comentar e apagar o comentário. O administrador só pode apagar um comentário.
+- O cliente pode comentar e apagar apenas seus próprios comentários.
+- O administrador pode apagar qualquer comentário.
+- Comentários devem ter entre 1 e 500 caracteres.
+- Não é permitido comentários vazios.
 
 #### Fluxo principal:  
 
@@ -112,6 +132,13 @@ O cliente pode comentar e apagar o comentário. O administrador só pode apagar 
 
 - Administrador.
 
+#### Regras de uso:
+
+- O livro deve estar disponível para aluguel.
+- O cliente não pode ter aluguéis com multa em aberto.
+- O prazo de aluguel é de 14 dias.
+- Um cliente só pode alugar no máximo 5 livros simultaneamente.
+
 #### Fluxo principal:  
 
 - O administrador inicia o processo de aluguel.
@@ -135,6 +162,12 @@ O cliente pode comentar e apagar o comentário. O administrador só pode apagar 
 
 - Administrador.
 
+#### Regras de uso:
+
+- Apenas aluguéis em andamento podem ser finalizados.
+- O livro deve estar no estado "alugado" no sistema.
+- A data de devolução é registrada automaticamente.
+
 #### Fluxo principal:  
 
 - O administrador abre a página de aluguéis do cliente.
@@ -155,6 +188,13 @@ O cliente pode comentar e apagar o comentário. O administrador só pode apagar 
 #### Atores: 
 
 - Administrador.
+
+#### Regras de uso:
+
+- Apenas administradores podem editar informações dos livros.
+- Não é permitido deixar campos obrigatórios vazios.
+- ISBN deve ser único para cada livro.
+- O preço de aluguel deve ser maior que zero.
 
 #### Fluxo principal:  
 
@@ -182,6 +222,13 @@ O cliente pode comentar e apagar o comentário. O administrador só pode apagar 
 #### Atores: 
 
 - Administrador.
+
+#### Regras de uso:
+
+- Apenas administradores podem deletar usuários.
+- Um usuário com aluguéis em andamento não pode ser deletado.
+- A exclusão é permanente e não pode ser desfeita.
+- Um log de exclusão é registrado no sistema.
 
 #### Fluxo principal: 
 
@@ -212,6 +259,13 @@ O cliente pode comentar e apagar o comentário. O administrador só pode apagar 
 
 - Cliente.
 
+#### Regras de uso:
+
+- Apenas o próprio cliente pode editar seu perfil.
+- Email não pode ser alterado se já estiver vinculado a outra conta.
+- Senha deve ter no mínimo 8 caracteres ao ser alterada.
+- Campo de telefone é opcional.
+
 #### Fluxo principal:
 
 - O cliente clica no ícone do próprio perfil.
@@ -240,6 +294,13 @@ O cliente pode comentar e apagar o comentário. O administrador só pode apagar 
 #### Atores:
 
 - Administrador.
+
+#### Regras de uso:
+
+- A multa é calculada automaticamente: R$ 5,00 por dia de atraso.
+- Multas só podem ser aplicadas após o prazo de devolução ter expirado.
+- O cliente deve ser notificado da multa aplicada.
+- A multa deve ser paga antes de fazer um novo aluguel.
 
 #### Fluxo principal: 
 
